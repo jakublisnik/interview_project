@@ -35,14 +35,14 @@ interview_project/
 2. Run `flutter pub get` to fetch dependencies.
 3. Start the app with `flutter run`.
 
-## App preview
+## App preview (location Ostrava)
 
 Android:
 
-<img width="1080" height="2400" alt="Screenshot_20250827_161017" src="https://github.com/user-attachments/assets/58deb3bc-fe21-433e-95c0-869dcf93e892" />
+<img width="300"  alt="Screenshot_20250827_161017" src="https://github.com/user-attachments/assets/58deb3bc-fe21-433e-95c0-869dcf93e892" />
 
 iOS:
 
-<img width="1290" height="2796" alt="simulator_screenshot_18A3422A-FAB4-41F4-BDC8-4A49D25E1476" src="https://github.com/user-attachments/assets/358d16b3-8a41-4cd2-9d6a-76366efc30e9" />
+<img width="300" height="2796" alt="simulator_screenshot_18A3422A-FAB4-41F4-BDC8-4A49D25E1476" src="https://github.com/user-attachments/assets/358d16b3-8a41-4cd2-9d6a-76366efc30e9" />
 
 

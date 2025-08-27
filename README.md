@@ -35,12 +35,14 @@ interview_project/
 2. Run `flutter pub get` to fetch dependencies.
 3. Start the app with `flutter run`.
 
-## Useful Resources
+## App preview
 
-- [Flutter Documentation](https://docs.flutter.dev/)
-- [Flutter Cookbook](https://docs.flutter.dev/cookbook)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+Android:
 
----
+<img width="1080" height="2400" alt="Screenshot_20250827_161017" src="https://github.com/user-attachments/assets/58deb3bc-fe21-433e-95c0-869dcf93e892" />
 
-Feel free to extend this project structure for your own needs. For any questions, refer to the official Flutter documentation.
+iOS:
+
+<img width="1290" height="2796" alt="simulator_screenshot_18A3422A-FAB4-41F4-BDC8-4A49D25E1476" src="https://github.com/user-attachments/assets/358d16b3-8a41-4cd2-9d6a-76366efc30e9" />
+
+

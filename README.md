@@ -31,9 +31,26 @@ interview_project/
 
 ## Getting Started
 
+### ⚡ **How to Run the Project**
+
 1. Install [Flutter SDK](https://docs.flutter.dev/get-started/install).
-2. Run `flutter pub get` to fetch dependencies.
-3. Start the app with `flutter run`.
+
+2. **Clone the repository:**
+   ```sh
+   git clone https://github.com/jakublisnik/interview_project.git
+   cd interview_project
+   ```
+
+3. **Install dependencies:**
+   ```sh
+   flutter pub get
+   ```
+
+4. **Run the project:**
+   ```sh
+   flutter run
+   ```
+
 
 ## App preview (location Ostrava)
 

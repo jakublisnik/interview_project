@@ -8,17 +8,24 @@ class StationModelRemote extends StationEntity {
     required super.lon,
   });
 
-  factory StationModelRemote.fromJson(Map<String, dynamic> json) => StationModelRemote(
-    id: json['id'] as int,
-    name: json['name'] as String,
-    lat: (json['lat'] as num).toDouble(),
-    lon: (json['lng'] as num).toDouble(),
-  );
+  factory StationModelRemote.fromJson(Map<String, dynamic> json) {
+    double _num(dynamic v) {
+      if (v == null) return 0;
+      if (v is num) return v.toDouble();
+      if (v is String) return double.tryParse(v.replaceAll(',', '.')) ?? 0;
+      return 0;
+    }
 
-  Map<String, dynamic> toJson() => {
-    'id': id,
-    'name': name,
-    'lat': lat,
-    'lng': lon,
-  };
+    final lat = json['GPSxDouble'] ?? json['GPSx'];
+    final lon = json['GPSyDouble'] ?? json['GPSy'];
+
+    return StationModelRemote(
+      id: json['Id'] is String
+          ? int.tryParse(json['Id']) ?? 0
+          : (json['Id'] ?? 0),
+      name: (json['Nazev'] ?? '').toString(),
+      lat: _num(lat),
+      lon: _num(lon),
+    );
+  }
 }

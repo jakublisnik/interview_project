@@ -1,4 +1,5 @@
 import 'package:get_it/get_it.dart';
+import 'package:http/http.dart' as http;
 
 import '../../features/stations/data/datasources/station_remote_data_source.dart';
 import '../../features/stations/data/datasources/station_local_data_source.dart';
@@ -16,8 +17,17 @@ import '../../features/stations/domain/usecases/get_nearest_stations.dart';
 final getIt = GetIt.instance;
 
 Future<void> configureDependencies() async {
-  // Datasources
-  getIt.registerLazySingleton<StationRemoteDataSource>(() => StationRemoteDataSourceImpl());
+  // Remote JSON (statický soubor hostovaný na GitHub Pages)
+  getIt.registerLazySingleton<StationRemoteDataSource>(
+        () => StationRemoteDataSourceImpl(
+      client: http.Client(),
+      jsonUrl: Uri.parse(
+        'https://jakublisnik.github.io/station_api/Bod.json',
+      ),
+    ),
+  );
+
+  // Lokal datasource
   getIt.registerLazySingleton<StationLocalDataSource>(() => StationLocalDataSourceImpl());
 
   // Repositories

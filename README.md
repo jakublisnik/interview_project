@@ -31,16 +31,35 @@ interview_project/
 
 ## Getting Started
 
+### ⚡ **How to Run the Project**
+
 1. Install [Flutter SDK](https://docs.flutter.dev/get-started/install).
-2. Run `flutter pub get` to fetch dependencies.
-3. Start the app with `flutter run`.
 
-## Useful Resources
+2. **Clone the repository:**
+   ```sh
+   git clone https://github.com/jakublisnik/interview_project.git
+   cd interview_project
+   ```
 
-- [Flutter Documentation](https://docs.flutter.dev/)
-- [Flutter Cookbook](https://docs.flutter.dev/cookbook)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+3. **Install dependencies:**
+   ```sh
+   flutter pub get
+   ```
 
----
+4. **Run the project:**
+   ```sh
+   flutter run
+   ```
 
-Feel free to extend this project structure for your own needs. For any questions, refer to the official Flutter documentation.
+
+## App preview (location Ostrava)
+
+Android:
+
+<img width="300"  alt="Screenshot_20250827_161017" src="https://github.com/user-attachments/assets/58deb3bc-fe21-433e-95c0-869dcf93e892" />
+
+iOS:
+
+<img width="300" height="2796" alt="simulator_screenshot_18A3422A-FAB4-41F4-BDC8-4A49D25E1476" src="https://github.com/user-attachments/assets/358d16b3-8a41-4cd2-9d6a-76366efc30e9" />
+
+

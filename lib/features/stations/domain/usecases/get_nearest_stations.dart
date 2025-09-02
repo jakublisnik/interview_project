@@ -1,5 +1,4 @@
 import '../entities/station_entity.dart';
-import '../entities/position_entity.dart';
 
 class GetNearestStations {
   const GetNearestStations();
